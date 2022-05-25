@@ -1,32 +1,33 @@
 Colors and swatchs from Tailwind CSS v3.0 includes 22 primary colors and thier shades.
 
+## Getting Started
+```dart
+import 'package:flutter_tailwind_colors/flutter_tailwind_colors.dart';
+```
 ## Usage
 
-Set the `primarySwatch` to `MaterialApp`. 
-
+Set  `primarySwatch` for `MaterialApp` :
 ```dart
 MaterialApp(
-      theme: ThemeData(
-            primarySwatch: TialwindColors.red,
+     theme: ThemeData(
+        primarySwatch: TwColors.indigo,  
       ),
-)
+);
 ```
-
-Use `TailwindColors` a primary color.
+Use `TwColors` primary colors [500]:
 ```dart
-Container(
-      color: TailwindColors.red,
-)
+TwColors.teal;
+//or use constants
+TwColors.teal500;
 ```
-Use `TailwindColors` with a specific shade.
+Use `TwColors` shades [50, 100, 200, 300, 400, 500, 600, 700, 800, 900]:
 ```dart
-Container(
-      color: TailwindColors.red[300],
-)
+//Simply use constants
+TwColors.violet400;
+TwColors.fuchsia800;
 //or
-Container(
-      color: TailwindColors.red.shade300,
-)
+TwColors.neutral[900];
+TwColors.neutral.shade900;
 ```
 
 
